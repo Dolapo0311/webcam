@@ -3,7 +3,7 @@ const btn = document.querySelector("button");
 
 btn.addEventListener("click",function(){
     navigator.mediaDevices.getUserMedia({
-        audio:false,
+        audio:true,
         video:true
     }).then(function(stream){
 video.srcObject = stream;
